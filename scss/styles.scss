@@ -1,0 +1,7 @@
+@import './variables';
+@import './normalize';
+@import './fonts';
+
+h1 {
+    font-family: $font__family;
+}
