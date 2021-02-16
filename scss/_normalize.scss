@@ -6,3 +6,30 @@ html, body {
 * {
     box-sizing: border-box;
 }
+
+h1,
+h2,
+h3 {
+    font-family: $font__headline;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 34px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 26px;
+}
+
+p,
+div,
+strong,
+span {
+    font-family: $font__paragraph;
+    font-size: 18px;
+}
