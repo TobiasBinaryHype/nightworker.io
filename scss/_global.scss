@@ -1,0 +1,29 @@
+.content {
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+
+.learn-more,
+.join-us {
+    border-radius: 16px;
+    font-family: $font__paragraph;
+    font-size: 26px;
+    border: none;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    padding: 10px 30px;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}
+
+.join-us {
+	background: $color__highlight;
+    color: white;
+}
+
+.learn-more {
+    color: $color__highlight;
+    background: white;
+}
