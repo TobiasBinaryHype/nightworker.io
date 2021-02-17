@@ -30,6 +30,10 @@
 	background: $color__highlight;
     color: white;
 
+    @include breakpoint-up(medium) {
+        margin-right: 1rem;
+    }
+
     &:hover {
         background: lighten($color__highlight, 10%);
     }
@@ -42,5 +46,21 @@
     &:hover {
         background: lighten($color__highlight, 10%);
         color: white;
+    }
+}
+
+.star {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: .7;
+    transition: transform .6s ease;
+    z-index: 1 !important;
+
+    &.scale {
+        transform: scale(1.7);
+        opacity: 1;
     }
 }
