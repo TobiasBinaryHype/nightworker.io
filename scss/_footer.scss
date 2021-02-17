@@ -1,0 +1,19 @@
+footer {
+    padding: 3rem 0;
+    background-color: $color__font;
+    color: white;
+
+    .footer__wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        & > * {
+            &:first-child {
+                @include breakpoint-down(large) {
+                    display: none;
+                }
+            }
+        }
+    }
+
+}

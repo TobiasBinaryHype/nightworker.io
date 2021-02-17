@@ -1,0 +1,23 @@
+header {
+    background-color: $color__font;
+    .header__content {
+        display: flex;
+        justify-content: space-between;
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+
+            .nav-item {
+                display: inline-block;
+                padding: 1rem;
+                text-decoration: none;
+                color: white;
+
+                &:hover {
+                    color: $color__primary2;
+                }
+            }
+        }
+    }
+}

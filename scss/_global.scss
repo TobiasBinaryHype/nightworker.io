@@ -7,6 +7,7 @@
 
 .learn-more,
 .join-us {
+    display: inline-block;
     border-radius: 16px;
     font-family: $font__paragraph;
     font-size: 26px;
@@ -16,6 +17,12 @@
     cursor: pointer;
     outline: none;
     text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    @include breakpoint-down(medium) {
+        font-size: 18px;
+    }
 }
 
 .join-us {

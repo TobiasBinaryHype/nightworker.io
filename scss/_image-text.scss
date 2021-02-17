@@ -1,0 +1,33 @@
+.image-text {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include breakpoint-down(medium) {
+        flex-direction: column-reverse;
+    }
+
+    &.reverse {
+        flex-direction: row-reverse;
+
+        @include breakpoint-down(medium) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    & > * {
+        width: 50%;
+
+        @include breakpoint-down(medium) {
+            width: 100%;
+        }
+    }
+
+    .image {
+        background-color: $color__primary2;
+        min-height: 200px;
+    }
+
+    .text {
+        padding: 3rem;
+    }
+}

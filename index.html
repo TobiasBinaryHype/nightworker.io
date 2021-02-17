@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,26 +8,82 @@
     <title>nightworker.io</title>
     <link href="./scss/styles.scss" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        
+        <div class="header__content content">
+            <div class="logo">Logo</div>
+            <nav>
+                <a class="nav-item" href="#entstehung">Entstehung</a>
+                <a class="nav-item" href="#zielgruppe">Zielgruppe</a>
+            </nav>
+        </div>
     </header>
     <div class="hero">
         <div class="hero__content content">
-        <div class="hero__text">
-            <h1>nightworker.io</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum omnis, sint nam, atque rem maiores </p>
-            <div class="cta">
-                <a href="#" class="join-us">Join Us</a>
-                <a href="#" class="learn-more">Learn More</a>
+            <div class="hero__text">
+                <h1>nightworker.io</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum omnis, sint nam, atque rem maiores
+                </p>
+                <div class="cta">
+                    <a href="https://discord.gg/WHZm6J2CQW" class="join-us">Join Us</a>
+                    <a href="#entstehung" class="learn-more">Learn More</a>
+                </div>
+            </div>
+            <div class="hero__illustration">
+                <img src="./img/lady.svg">
             </div>
         </div>
-        <div class="hero__illustration">
-            <img src="./img/lady.svg">
+    </div>
+
+    <div class="video">
+        <iframe width="840" height="472" src="https://www.youtube.com/embed/5qap5aO4i9A" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+
+    <div id="entstehung" class="image-text">
+        <div class="image"></div>
+        <div class="text">
+            <h2>Entstehung</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, repellat incidunt! Corrupti ipsum
+                voluptatibus dolores est dolorem quis distinctio vero quam. Eius, expedita! Expedita labore veniam ea?
+                Odit, aliquam similique.</p>
         </div>
     </div>
+
+    <div id="zielgruppe" class="image-text reverse">
+        <div class="image"></div>
+        <div class="text">
+            <h2>Zielgruppe</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, repellat incidunt! Corrupti ipsum
+                voluptatibus dolores est dolorem quis distinctio vero quam. Eius, expedita! Expedita labore veniam ea?
+                Odit, aliquam similique.</p>
+        </div>
     </div>
-    
+
+    <div class="infobox">
+        <div class="infobox__content content">
+            <h2>nightworker.io</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit dolorum numquam perferendis dolore
+                veritatis voluptatibus nesciunt ab officiis sed? Vero quibusdam, asperiores assumenda officiis aperiam
+                quae quia iste? Nihil, repudiandae?</p>
+            <div class="cta">
+                <a href="https://discord.gg/WHZm6J2CQW" class="join-us">Join Us</a>
+                <!-- <a href="#" class="learn-more">Learn More</a> -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer__wrapper content">
+        <div></div>
+        <div class="copyright">Copyright 2021 - Made with bytes</div>
+        <div class="legal">Impressum | Datenschutz</div>
+    </div>
+    </footer>
+
     <script src="./js/app.js"></script>
 </body>
+
 </html>

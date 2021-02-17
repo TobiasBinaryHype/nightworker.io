@@ -1,0 +1,9 @@
+.video {
+    display: flex;
+    justify-content: center;
+    padding: 5rem 0;
+
+    iframe {
+        max-width: 100%;
+    }
+}
