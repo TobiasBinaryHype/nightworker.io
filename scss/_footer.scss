@@ -3,6 +3,15 @@ footer {
     background-color: $color__font;
     color: white;
 
+    a {
+        color: white;
+        text-decoration: none;
+
+        &:hover {
+            color: $color__primary2;
+        }
+    }
+
     .footer__wrapper {
         display: flex;
         justify-content: space-between;

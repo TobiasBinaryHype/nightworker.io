@@ -19,6 +19,7 @@
     text-decoration: none;
     margin-top: 10px;
     margin-bottom: 10px;
+    transition: all .3s ease;
 
     @include breakpoint-down(medium) {
         font-size: 18px;
@@ -28,9 +29,18 @@
 .join-us {
 	background: $color__highlight;
     color: white;
+
+    &:hover {
+        background: lighten($color__highlight, 10%);
+    }
 }
 
 .learn-more {
     color: $color__highlight;
     background: white;
+
+    &:hover {
+        background: lighten($color__highlight, 10%);
+        color: white;
+    }
 }
