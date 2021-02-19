@@ -42,7 +42,11 @@
     &__text {
         text-align: center;
         width: 100%;
-        max-width: 60%;
+        max-width: $width__content;
+
+        @include breakpoint-down(medium) {
+            padding: 0 2rem;
+        }
 
         h1 {
             margin-top: 0;
