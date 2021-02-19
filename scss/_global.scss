@@ -1,6 +1,6 @@
 .content {
 	width: 100%;
-	max-width: 1440px;
+	max-width: $width__content;
 	margin: 0 auto;
 	padding: 0 2rem;
 }
@@ -13,54 +13,67 @@
     font-size: 26px;
     border: none;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-    padding: 10px 30px;
+    padding: 16px 32px;
     cursor: pointer;
     outline: none;
     text-decoration: none;
     margin-top: 10px;
     margin-bottom: 10px;
-    transition: all .3s ease;
+    transition: all .2s ease;
 
     @include breakpoint-down(medium) {
         font-size: 18px;
+        padding: 10px 30px;
     }
 }
 
 .join-us {
+    position: relative;
 	background: $color__highlight;
+    border: 4px solid $color__highlight;
     color: white;
+    padding-left: 55px;
 
     @include breakpoint-up(medium) {
         margin-right: 1rem;
     }
 
+    @include breakpoint-down(medium) {
+        padding-left: 35px;
+    }
+
     &:hover {
         background: lighten($color__highlight, 10%);
+        border: 4px solid lighten($color__highlight, 10%);
+    }
+
+    &::before {
+        position: absolute;
+        left: 17px;
+        top: 20px;
+        content: '';
+        height: 26px;
+        width: 26px;
+        background-image: url(/img/icons/discord.svg);
+        background-size: cover;
+
+        @include breakpoint-down(medium) {
+            height: 18px;
+            width: 18px;
+            left: 10px;
+            top: 12px;
+        }
     }
 }
 
 .learn-more {
     color: $color__highlight;
     background: white;
+    border: 4px solid white;
 
     &:hover {
-        background: lighten($color__highlight, 10%);
-        color: white;
-    }
-}
-
-.star {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: white;
-    border-radius: 50%;
-    opacity: .7;
-    transition: transform .6s ease;
-    z-index: 1 !important;
-
-    &.scale {
-        transform: scale(1.7);
-        opacity: 1;
+        // background: $color;
+        // color: white;
+        border-color: $color__highlight;
     }
 }

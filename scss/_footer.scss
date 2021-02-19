@@ -1,6 +1,6 @@
 footer {
     padding: 3rem 0;
-    background-color: $color__font;
+    background-color: $color__primary;
     color: white;
 
     a {
@@ -8,7 +8,7 @@ footer {
         text-decoration: none;
 
         &:hover {
-            color: $color__primary2;
+            color: $color__highlight;
         }
     }
 

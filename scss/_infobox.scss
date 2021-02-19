@@ -1,11 +1,25 @@
 .infobox {
     display: flex;
     justify-content: center;
-    margin-bottom: 3rem;
-    padding-top: 3rem;
+    padding: 0 2rem;
 
     &__content {
-        width: 560px;
-        max-width: 100%;
+        padding: 10rem 0;
+        text-align: center;
+        max-width: $width__text;
+
+        @include breakpoint-down(medium) {
+            padding: 5rem 0;
+        }
+
+        .content__text {
+            font-size: 38px;
+            margin-bottom: $length__medium3;
+            font-family: $font__headline;
+
+            @include breakpoint-down(medium) {
+                font-size: 34px;
+            }
+        }
     }
 }

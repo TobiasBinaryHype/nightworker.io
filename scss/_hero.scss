@@ -1,73 +1,73 @@
 .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-	width: 100%;
-    background: linear-gradient(#373369 0%, #6a66ac 40%,#6a66ac 100%);
-    // z-index: -1;
+    height: 100vh;
+    width: 100%;
 
-    & * {
-        z-index: 5;
+    @include breakpoint-down(medium) {
+        
+        height: 100%;
     }
 
-    svg {
+    & > img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        object-fit: cover;
+        height: 100vh;
         width: 100%;
-    }
-
-	&__content {
-		display: flex;
-        flex-wrap: wrap;
-		justify-content: space-between;
-        padding-top: 10vh;
-        padding-bottom: 10vh;
-		height: 100%;
-
-        @include breakpoint-down(small) {
-            padding-top: 5vh;
-            padding-bottom: 5vh;
-        }
-
-        & > * {
-            width: 50%;
-
-            &:first-child {
-                @include breakpoint-up(medium) {
-                    padding-right: 2rem;
-                }
-            }
-
-            &:last-child {
-                @include breakpoint-up(medium) {
-                    padding-left: 2rem;
-                }
-            }
-
-            @include breakpoint-down(medium) {
-                width: 100%;
-            }
-        }
-	}
-
-	&__text {
-        color: $color__font;
+        z-index: -1;
 
         @include breakpoint-down(medium) {
-            margin-bottom: 2rem;
+            height: 100%;
         }
+    }
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        background: rgba(16, 15, 22, 0.9);
+
+        @include breakpoint-down(medium) {
+            padding-top: $length__large2;
+            padding-bottom: $length__large2;
+        }
+    }
+
+    &__text {
+        text-align: center;
+        width: 100%;
+        max-width: 60%;
 
         h1 {
+            margin-top: 0;
+            margin-bottom: $length__large1;
+            font-weight: 400;
+            font-size: 38px;
+
             @include breakpoint-down(medium) {
-                color: white;
-                text-shadow: 2px 2px black;
+                font-size: 18px;
             }
         }
 
         p {
-            font-size: 26px;
+            font-size: 64px;
+            line-height: 68px;
+            font-weight: bold;
+            margin-top: 0;
+            margin-bottom: $length__large3;
+            font-family: $font__headline;
 
             @include breakpoint-down(medium) {
-                font-size: 20px;
-                color: white;
-            text-shadow: 2px 2px black;
+                font-size: 32px;
+                line-height: 36px;
+                margin-bottom: $length__large1;
             }
         }
-	}
+    }
 }

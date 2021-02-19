@@ -23,11 +23,17 @@
     }
 
     .image {
-        background-color: $color__primary2;
-        min-height: 200px;
+        background-color:$color__highlight;
+        min-height: 500px;
+        background-position: center center;
+        background-size: cover;
     }
 
     .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         padding: 3rem;
+        background-color: $color__primary;
     }
 }

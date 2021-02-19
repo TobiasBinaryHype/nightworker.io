@@ -5,6 +5,7 @@ html, body {
 
 body {
     overflow-x: hidden;
+    background-color: $color__accent;
 }
 
 * {
@@ -16,7 +17,7 @@ h2,
 h3 {
     font-family: $font__headline;
     font-weight: bold;
-    color: $color__font;
+    color: $color__text;
     margin-top: 0;
 }
 
@@ -29,7 +30,7 @@ h1 {
 }
 
 h2 {
-    font-size: 46px;
+    font-size: 38px;
 
     @include breakpoint-down(medium) {
         font-size: 22px;
@@ -50,6 +51,7 @@ strong,
 span {
     font-family: $font__paragraph;
     font-size: 18px;
+    color: $color__text;
 
     @include breakpoint-down(medium) {
         font-size: 16px;
