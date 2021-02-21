@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nightworker.io</title>
-    <link href="./scss/styles.scss" rel="preload stylesheet">
+    <link href="./scss/styles.scss" rel="stylesheet">
 </head>
 
 <body>
@@ -14,13 +14,14 @@
         <div class="header__content content">
             <div class="logo">Logo</div>
             <nav>
-                <a class="nav-item" href="#">Entstehung</a>
-                <a class="nav-item" href="#">Zielgruppe</a>
+                <a class="nav-item" href="#entstehung">Entstehung</a>
+                <a class="nav-item" href="#facts">Facts</a>
             </nav>
         </div>
     </header>
     <div class="hero">
-        <img class="hero__backround" src="./img/hero_background.png" alt="Schwarzweißfoto von einen Mann der in einen Stuhl vor seinen Laptop sitzt">
+        <img class="hero__backround" src="./img/hero_background.png"
+            alt="Schwarzweißfoto von einen Mann der in einen Stuhl vor seinen Laptop sitzt">
         <div class="hero__content">
             <div class="hero__text">
                 <h1>nightworker.io</h1>
@@ -36,43 +37,85 @@
     <div class="video">
         <div class="video__container">
             <h2>nightworker.io in 3 Minuten</h2>
+            <p>nightworker.io ist eine Community von Entwicklern, die gemeinsam Nachts noch an ihren eigenen Ideen
+                basteln aber dabei nicht alleine sein wollen.</p>
             <div class="video__iframe">
-                <iframe title="Vorstellungsvideo über nightworker.io" src="https://www.youtube.com/embed/5qap5aO4i9A" frameborder="0"
+                <iframe title="Vorstellungsvideo über nightworker.io" src="https://www.youtube.com/embed/5qap5aO4i9A"
+                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
         </div>
     </div>
-
-    <div id="" class="image-text">
-        <div class="image" style="background-image: url(/img/image-text1.jpg)">
-
+    <div id="facts" class="cards">
+        <div class="card">
+            <div class="card__icon">
+                <img src="img/icons/discord-purple.svg">
+            </div>
+            <div class="card__headline">
+                <h3>Discord</h3>
+            </div>
+            <div class="card__text">
+                Wir halten es super unkompliziert und du kannst einfach über "Discord" zu unserer Community stoßen. Dort
+                findest du in unseren Voice-Channels mehrere Gruppen, zu denen du einfach dazustoßen kannst.
+            </div>
         </div>
-        <div class="text">
-            <h2>Was ist nightworker.io?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, repellat incidunt! Corrupti ipsum
-                voluptatibus dolores est dolorem quis distinctio vero quam. Eius, expedita! Expedita labore veniam ea?
-                Odit, aliquam similique.</p>
+        <div class="card">
+            <div class="card__icon">
+                <img src="img/icons/camera.svg">
+            </div>
+            <div class="card__headline">
+                <h3>Arbeitsgruppen</h3>
+            </div>
+            <div class="card__text">
+                In den Arbeitsgruppen läuft es so, dass alle in der Regel Video und Audio aktiviert haben und sich
+                gegenseitig austauschen.
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__icon">
+                <img src="img/icons/mute.svg">
+            </div>
+            <div class="card__headline">
+                <h3>Ruheraum</h3>
+            </div>
+            <div class="card__text">
+                Es gibt meist aber auch Ruhephasen. Dann haben wir noch die Silent-Gruppen, wo Video aber kein Audio
+                aktiv ist. Hier bist du einfach nicht alleine, wirst aber auch nicht gestört.
+            </div>
+        </div>
+        <div class="card">
+            <div class="card__icon">
+                <img src="img/icons/music.svg">
+            </div>
+            <div class="card__headline">
+                <h3>Party</h3>
+            </div>
+            <div class="card__text">
+                Ab und an wird der Partychannel angeschmissen, wo Musik gespielt wird. Ansonsten kannst du, wenn du Bock
+                zu quatschen hast auch in die allgemeinen Channels wechseln.
+            </div>
         </div>
     </div>
 
-    <div id="" class="image-text reverse">
-        <div class="image" style="background-image: url(/img/image-text2.jpg)"></div>
-        <div class="text">
-            <h2>Für wen ist es gedacht?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, repellat incidunt! Corrupti ipsum
-                voluptatibus dolores est dolorem quis distinctio vero quam. Eius, expedita! Expedita labore veniam ea?
-                Odit, aliquam similique.</p>
-        </div>
-    </div>
+    <div id="entstehung" class="quote">
+        <h2>Woher kommt die Idee?</h2>
+        <div class="quote__container">
+            <div class="quote__text">
+                <div class="text__icon">
+                    <img src="./img/icons/quote.svg" alt="Quote Icon">
+                </div>
 
-    <div id="" class="image-text">
-        <div class="image" style="background-image: url(/img/image-text3.jpg)"></div>
-        <div class="text">
-            <h2>Woher kommt die Idee?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, repellat incidunt! Corrupti ipsum
-                voluptatibus dolores est dolorem quis distinctio vero quam. Eius, expedita! Expedita labore veniam ea?
-                Odit, aliquam similique.</p>
+                Ich, Daniel, wollte eigentlich nach Jahren der Pause mal wieder abends in aller
+                Ruhe an privaten Projekten arbeiten. Da mir aber die Motivation und die Verbindlichkeit gefehlt hat,
+                habe ich ein paar befreundete Entwickler gefragt, ob sie nicht Lust hätten ab und an mit mir abends
+                zu arbeiten. Dabei bin ich auf eine super Resonanz gestoßen und somit war nightworker.io geboren. Naja
+                und ich wollte eigentlich schon immer mal ne coole .io Domain haben.
+
+            </div>
+            <div class="quote__image">
+                <img src="/img/daniel.svg" alt="">
+            </div>
         </div>
     </div>
 
@@ -81,7 +124,6 @@
             <div class="content__text">Dir geht es so wie uns und du willst mit netten Menschen Coworken?</div>
             <div class="cta">
                 <a href="https://discord.gg/WHZm6J2CQW" class="join-us">Klar, ich hab voll Bock!</a>
-                <!-- <a href="#" class="learn-more">Learn More</a> -->
             </div>
         </div>
     </div>

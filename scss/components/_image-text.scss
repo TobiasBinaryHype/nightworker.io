@@ -24,7 +24,7 @@
 
     .image {
         background-color:$color__highlight;
-        min-height: 500px;
+        // min-height: 500px;
         background-position: center center;
         background-size: cover;
     }
@@ -35,5 +35,9 @@
         justify-content: center;
         padding: 3rem;
         background-color: $color__primary;
+        
+        p, li {
+            font-size: 18px;
+        }
     }
 }

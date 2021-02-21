@@ -1,5 +1,6 @@
 .video {
     padding: 8rem 0 10rem 0;
+    text-align: center;
 
     @include breakpoint-down(medium) {
         padding: 4rem 1rem;
@@ -26,7 +27,9 @@
     }
 
     h2 {
-        text-align: center;
+        margin-bottom: $length__medium2;
+    }
+    p {
         margin-bottom: $length__large2;
     }
 

@@ -14,11 +14,14 @@
 
         .content__text {
             font-size: 38px;
+            line-height: 42px;
+            font-weight: bold;
             margin-bottom: $length__medium3;
             font-family: $font__headline;
 
             @include breakpoint-down(medium) {
-                font-size: 34px;
+                font-size: 32px;
+                line-height: 36px;
             }
         }
     }

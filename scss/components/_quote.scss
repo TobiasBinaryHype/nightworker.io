@@ -1,0 +1,59 @@
+.quote {
+    background-color: $color__primary;
+    padding-bottom: $length__large3;
+
+    h2 {
+        text-align: center;
+    }
+
+    &__container {
+        display: flex;
+        max-width: $width__text;
+        width: 100%;
+        padding: 1rem 2rem;
+        margin: 0 auto;
+
+        @include breakpoint-down(small) {
+            flex-direction: column;
+        }
+    }
+
+    &__image {
+        display: flex;
+        justify-content: center;
+        width: 25%;
+
+        @include breakpoint-down(small) {
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__text {
+        width: 75%;
+        padding: 1rem 5rem 1rem 0;
+        color: #f2f5f588;
+        text-align: left;
+
+        @include breakpoint-down(small) {
+            width: 100%;
+            padding: 1rem 0;
+        }
+
+        .text__icon {
+            display: flex;
+            justify-content: center;
+            height: 50px;
+            opacity: .8;
+            margin-bottom: 2rem;
+
+            img {
+                max-height: 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
