@@ -12,7 +12,7 @@
 <body>
     <header>
         <div class="header__content content">
-            <div class="logo">Logo</div>
+            <div class="logo"></div>
             <nav>
                 <a class="nav-item" href="#entstehung">Entstehung</a>
                 <a class="nav-item" href="#facts">Facts</a>
@@ -20,33 +20,35 @@
         </div>
     </header>
     <div class="hero">
-        <img class="hero__backround" src="./img/hero_background.png"
+        <img class="hero__backround" src="./img/hero_background.jpg"
             alt="Schwarzweißfoto von einen Mann der in einen Stuhl vor seinen Laptop sitzt">
         <div class="hero__content">
             <div class="hero__text">
                 <h1>nightworker.io</h1>
                 <p>Die Community für alle, die auch Nachts die Welt verändern wollen</p>
                 <div class="cta">
-                    <a href="https://discord.gg/WHZm6J2CQW" class="join-us">Los geht's!</a>
-                    <a href="#entstehung" class="learn-more">WTF?!</a>
+                    <a href="https://discord.gg/WHZm6J2CQW" class="join-us">Jetzt mitmachen!</a>
+                    <a href="#entstehung" class="learn-more">Was zur Hölle ist das?</a>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="video">
-        <div class="video__container">
-            <h2>nightworker.io in 3 Minuten</h2>
-            <p>nightworker.io ist eine Community von Entwicklern, die gemeinsam Nachts noch an ihren eigenen Ideen
-                basteln aber dabei nicht alleine sein wollen.</p>
-            <div class="video__iframe">
-                <iframe title="Vorstellungsvideo über nightworker.io" src="https://www.youtube.com/embed/5qap5aO4i9A"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+        <div class="video__background">
+            <div class="video__container">
+                <h2>nightworker.io in 3 Minuten</h2>
+                <p>Was ist nightworker.io? Für wen ist das Projekt gedacht? Was hast du davon?</p>
+                <div class="video__iframe">
+                    <iframe title="Vorstellungsvideo über nightworker.io"
+                        src="https://www.youtube.com/embed/5qap5aO4i9A" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </div>
+
     <div id="facts" class="cards">
         <div class="card">
             <div class="card__icon">
@@ -98,6 +100,19 @@
         </div>
     </div>
 
+    <div class="rules">
+        <div class="rules__background">
+            <div class="rules__container">
+                <h2>Regeln</h2>
+            <ul>
+                <li class="one">Sei nett, höflich und wertschätzend</li>
+                <li class="two">Störe nicht die anderen, wenn sie ihre Ruhe wollen</li>
+                <li class="three">Teile dein Wissen</li>
+            </ul>
+        </div>
+        </div>
+    </div>
+
     <div id="entstehung" class="quote">
         <h2>Woher kommt die Idee?</h2>
         <div class="quote__container">
@@ -105,25 +120,28 @@
                 <div class="text__icon">
                     <img src="./img/icons/quote.svg" alt="Quote Icon">
                 </div>
-
-                Ich, Daniel, wollte eigentlich nach Jahren der Pause mal wieder abends in aller
-                Ruhe an privaten Projekten arbeiten. Da mir aber die Motivation und die Verbindlichkeit gefehlt hat,
-                habe ich ein paar befreundete Entwickler gefragt, ob sie nicht Lust hätten ab und an mit mir abends
-                zu arbeiten. Dabei bin ich auf eine super Resonanz gestoßen und somit war nightworker.io geboren. Naja
-                und ich wollte eigentlich schon immer mal ne coole .io Domain haben.
-
+                <div class="text__text">
+                    Als Entwickler habe ich schon immer gerne abends in Ruhe gearbeitet. Irgendwann war es dann doch
+                    etwas einsam und mir fehlte der Austausch. Jetzt war ich mit dem Anspruch nicht alleine, was mich
+                    dann zu der Idee von nightworker.io gebracht hat. Mich motiviert es einfach Kollegen zu sehen und zu
+                    wissen, dass man gerade nicht alleine an seinem Projekt sitzt.
+                </div>
+                <div class="text__author">
+                    Daniel Nilges, Founder @ nightworker.io
+                </div>
             </div>
-            <div class="quote__image">
-                <img src="/img/daniel.svg" alt="">
-            </div>
+            <img class="quote__image" src="/img/daniel.svg" alt="">
         </div>
     </div>
 
     <div class="infobox">
-        <div class="infobox__content content">
-            <div class="content__text">Dir geht es so wie uns und du willst mit netten Menschen Coworken?</div>
-            <div class="cta">
-                <a href="https://discord.gg/WHZm6J2CQW" class="join-us">Klar, ich hab voll Bock!</a>
+        <div class="infobox__background">
+            <div class="infobox__content content">
+                <div class="content__text">Dir geht es so wie uns und du willst mit netten Menschen digital Coworken?
+                </div>
+                <div class="cta">
+                    <a href="https://discord.gg/WHZm6J2CQW" class="join-us">Jetzt mitmachen!</a>
+                </div>
             </div>
         </div>
     </div>

@@ -1,9 +1,10 @@
 .quote {
     background-color: $color__primary;
-    padding-bottom: $length__large3;
+    padding: $length__large3 0;
 
     h2 {
         text-align: center;
+        margin-bottom: $length__large2;
     }
 
     &__container {
@@ -12,6 +13,8 @@
         width: 100%;
         padding: 1rem 2rem;
         margin: 0 auto;
+        background-color: $color__highlight;
+        border-radius: 16px;
 
         @include breakpoint-down(small) {
             flex-direction: column;
@@ -19,36 +22,34 @@
     }
 
     &__image {
-        display: flex;
-        justify-content: center;
-        width: 25%;
-
-        @include breakpoint-down(small) {
-            width: 100%;
-        }
-
-        img {
-            width: 100%;
-        }
     }
 
     &__text {
-        width: 75%;
         padding: 1rem 5rem 1rem 0;
-        color: #f2f5f588;
-        text-align: left;
+        text-align: center;
+        
 
         @include breakpoint-down(small) {
             width: 100%;
             padding: 1rem 0;
         }
 
+        .text__text {
+            margin-bottom: $length__large1;
+            font-size: 20px;
+        }
+
+        .text__author {
+            font-size: 18px;
+            color: #f2f5f588;
+        }
+
         .text__icon {
             display: flex;
             justify-content: center;
-            height: 50px;
-            opacity: .8;
-            margin-bottom: 2rem;
+            height: 30px;
+            opacity: .2;
+            margin-bottom: 1rem;
 
             img {
                 max-height: 100%;
